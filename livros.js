@@ -1,7 +1,7 @@
 const express = require("express"); 
 const router = express.Router();
-//const cors = require("cors");
-//router.use(cors());
+const cors = require("cors");
+router.use(cors());
 
 const dbKnex = require("./data/db_config"); 
 
